@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      background: url('https://example.com/background.jpg') no-repeat center center fixed;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 300px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    a {
+      color: #007bff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      text-align: center;
+    }
+    .error {
+      color: red;
+      text-align: center;
+    }
+    .success {
+      color: green;
+      text-align: center;
+    }
+    .info {
+      color: #17a2b8;
+      text-align: center;
+    }
+    .warning {
+      color: #ffc107;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- a simple login page -->
+  <h1>Login</h1>
+  <form action="/login" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Login</button>
+    <p>Don't have an account? <a href="/register">Register here</a>.</p>
+    <p><a href="/forgot-password">Forgot your password?</a></p>
+    <p><a href="/">Back to home</a></p>
+    <p>Or <a href="/oauth/google">Login with Google</a></p>
+    <p>Or <a href="/oauth/github">Login with GitHub</a></p>
+    <p>Or <a href="/oauth/facebook">Login with Facebook</a></p> 
+  </form>
+</body>
+<script>
+  
+</script>
+</html>
